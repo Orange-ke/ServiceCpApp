@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<style>
+			.expert{overflow: hidden;}
+			.expert .expert-li{margin: 20px 10px 0;background: #fff;padding: 10px;}
+			.expert .expert-li .li-top .img{width: 60px;height: 60px;border-radius: 50%;overflow: hidden;float: left;margin-right: 10px;background: #fff;margin-top: -25px;}
+			.expert .expert-li .li-top .img img{width: 100%;height: auto;}
+			.expert .expert-li .li-top h5 span{font-size: 14px;margin-left: 20px;}
+			.expert .expert-li .mui-ellipsis-2{font-size: 12px;color: #333;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" id="refreshContainer">
+			<div class="expert">
+				<div class="expert-li" data-openwindow='{"url":"expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
+					<div class="li-top">
+        				<div class="img"><img src="../../images/zj1.jpg" /></div>
+        				<div>
+        					<h5 class="mui-ellipsis">王小明<span>投资类</span></h5>
+        					<p class="mui-ellipsis">柳州市中信股份有限公司</p>
+        				</div>
+        			</div>
+        			<div class="mui-ellipsis-2">专注投资行业15年，曾获得XXXX等多项大奖，帮助多家企业及个人投资指导，为柳州市中小企业的发展作出了巨大的贡献...</div>
+				</div>
+				<div class="expert-li" data-openwindow='{"url":"expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
+					<div class="li-top">
+        				<div class="img"><img src="../../images/zj1.jpg" /></div>
+        				<div>
+        					<h5 class="mui-ellipsis">王小明<span>投资类</span></h5>
+        					<p class="mui-ellipsis">柳州市中信股份有限公司</p>
+        				</div>
+        			</div>
+        			<div class="mui-ellipsis-2">专注投资行业15年，曾获得XXXX等多项大奖，帮助多家企业及个人投资指导，为柳州市中小企业的发展作出了巨大的贡献...</div>
+				</div>
+				<div class="expert-li" data-openwindow='{"url":"expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
+					<div class="li-top">
+        				<div class="img"><img src="../../images/zj1.jpg" /></div>
+        				<div>
+        					<h5 class="mui-ellipsis">王小明<span>投资类</span></h5>
+        					<p class="mui-ellipsis">柳州市中信股份有限公司</p>
+        				</div>
+        			</div>
+        			<div class="mui-ellipsis-2">专注投资行业15年，曾获得XXXX等多项大奖，帮助多家企业及个人投资指导，为柳州市中小企业的发展作出了巨大的贡献...</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../../js/mui.js"></script>
+		<script src="../../js/util.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				pullRefresh: {
+					container: '#refreshContainer',
+					down: {
+						style: 'circle',
+						color: '#43AAF7',
+						//auto: true,
+						callback: function() {
+							mui('#refreshContainer').pullRefresh().endPulldown();
+						}
+					},
+					up:{
+						contentrefresh : "正在加载...",
+						contentnomore:'没有更多数据了',
+						callback :function(){
+							mui.later(function(){
+								mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+							},1000);
+						}
+					}
+				}
+			});
+			mui.plusReady(function(){
+				
+			});
+		</script>
+	</body>
+
+</html>

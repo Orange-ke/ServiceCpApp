@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			.mui-bar-nav{background: #028EFF;}
+			.mui-bar-nav .mui-title,.mui-bar-nav a{color: #fff;}
+			.user-info{background: #028EFF;height: 80px;padding: 10px;}
+			.user-info .avatar{float: left;width: 60px;height: 60px;border-radius: 50%;overflow: hidden;margin-right: 10px;}
+			.user-info .avatar img{width: inherit;height: auto;}
+			.user-info h5,.user-info p{color: #fff;}
+			.user-info h5{margin-top: 10px;margin-bottom: 10px;}
+			.mui-table-view{font-size: 14px;}
+			.mui-table-view .iconfont{margin-right: 10px;color: #666;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav immersed immersed-height">
+			<h1 class="mui-title">我的</h1>
+			<a class="mui-pull-right mui-icon mui-icon-gear"></a>
+		</header>
+		<div class="mui-content mui-scroll-wrapper immersed">
+			<div class="mui-scroll">
+				<div class="user-info">
+					<div class="avatar"><img src="images/zj2.jpg"/></div>
+					<div class="info-right"><h5 class="mui-ellipsis">上海创创投资有限公司</h5><p class="mui-ellipsis">财务审计服务</p></div>
+				</div>
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-ht"></font>合同列表</a></li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-yhq"></font>优惠服务券</a></li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-zl"></font>企业资料</a></li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-sc"></font>收藏的服务</a></li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-jg"></font>收藏的服务机构</a></li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-ls"></font>浏览历史</a></li>
+			        <li class="mui-table-view-cell" data-openwindow='{"url":"pages/my/approve.html","id":"approve","styles":{"bounce": "vertical","titleNView":{"titleText":"认证"}}}'>
+			        	<a class="mui-navigate-right"><font class="iconfont icon-rz"></font>认证</a>
+			        </li>
+			        <li class="mui-table-view-cell"><a class="mui-navigate-right"><font class="iconfont icon-bz"></font>平台帮助</a></li>
+			   </ul>
+			</div>
+		</div>
+		
+		<script src="js/mui.js"></script>
+		<script src="js/util.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function(){
+				mui('.mui-scroll-wrapper').scroll();
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+	"index.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html",
+			"my.html",
+			"mall.html",
+			"coupons.html",
+			"policy.html"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"mall.html",
+			"coupons.html"
+		],
+		"refer": [
+			"my.html",
+			"mall.html",
+			"coupons.html",
+			"policy.html",
+			"pages/home/expertList.html"
+		]
+	},
+	"mall.html": {
+		"refer": [
+			"pages/mall/serviceList.html"
+		]
+	},
+	"pages/home/expertList.html": {
+		"refer": [
+			"pages/home/expertDetail.html"
+		]
+	},
+	"my.html": {
+		"refer": [
+			"pages/my/approve.html"
+		]
+	}
+}

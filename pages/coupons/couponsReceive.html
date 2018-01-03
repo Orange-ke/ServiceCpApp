@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<style>
+			.mui-bar-nav .nav-search{position: absolute;top: 0;left: 10px;right: 10px;background: #fff;z-index: 1000;padding-right: 40px;}
+			.mui-bar-nav .nav-search > a{position: absolute;right: 0px;top: 10px;}
+			
+			.coupons-li{margin: 10px;border: #D2D2D2 1px solid;height: 90px;background: #fff;border-left: none;}
+			.mui-ios .coupons-li{border-width: 0.5px;border-radius: 3px;overflow: hidden;}
+			.coupons-li .mui-col-xs-4{background: #43AAF7;height: 100%;color: #fff;text-align: center;padding-top: 13px;position: relative;}
+			.coupons-li .mui-col-xs-4:before{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				content: '';
+				height: 100%;
+				width: 4px;
+				background-image: -webkit-radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-image: -moz-radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-image: radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-size: 8px 8px;
+			    background-position-x: -4px;
+			}
+			.coupons-li .mui-col-xs-4 font{font-size: 16px;font-weight: normal;margin-right: 5px;}
+			.coupons-li .mui-col-xs-4 p{color: #fff;}
+			.coupons-li .mui-col-xs-8{padding: 5px 10px;}
+			.coupons-li .mui-col-xs-8 h6{height: 32px;line-height: 120%;margin-bottom: 15px;}
+			.coupons-li .mui-col-xs-8 .receive{padding-right: 80px;position: relative;}
+			.coupons-li .mui-col-xs-8 .receive .progressbox p{text-align: center;margin: 0;}
+			.coupons-li .mui-col-xs-8 .receive .progressbox .mui-progressbar span{background-color: #FE3C3D;}
+			.coupons-li .mui-col-xs-8 .receive .mui-btn{position: absolute;right: 0;top: 2px;padding: 1px 8px;font-size: 12px;border-radius: 10px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav border-bottom">
+			<a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+			<h1 class="mui-title">领券中心</h1>
+			<a class="mui-icon mui-icon-search mui-pull-right toggleSearch" data-action="show"></a>
+			<div class="nav-search mui-hidden">
+				<div class="mui-input-row mui-search">
+				    <input type="search" class="mui-input-clear" placeholder="服务券名称">
+				</div>
+				<a class="toggleSearch" data-action="hide">取消</a>
+			</div>
+			
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="container">
+					<div class="coupons-li mui-row">
+						<div class="mui-col-xs-4"><h2><font>￥</font>200</h2><p>服务券</p></div>
+						<div class="mui-col-xs-8">
+							<h6 class="mui-ellipsis-2">仅限购买XXXXX时使用</h6>
+							<div class="receive">
+								<div class="progressbox">
+									<p class="font-red">已抢80%</p>
+									<div class="mui-progressbar" data-progress="80"><span></span></div>
+								</div>
+								<button class="mui-btn mui-btn-red">立即领取</button>
+							</div>
+						</div>
+					</div>
+					<div class="coupons-li mui-row">
+						<div class="mui-col-xs-4"><h2><font>￥</font>200</h2><p>服务券</p></div>
+						<div class="mui-col-xs-8">
+							<h6 class="mui-ellipsis-2">仅限购买什么什么什么服务券服务券服务券服务券时使用</h6>
+							<div class="receive">
+								<div class="progressbox">
+									<p class="font-red">已抢50%</p>
+									<div class="mui-progressbar" data-progress="50"><span></span></div>
+								</div>
+								<button class="mui-btn mui-btn-red">立即领取</button>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+		
+		<script src="../../js/mui.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function(){
+				mui('.mui-scroll-wrapper').scroll();
+				//显示隐藏搜索框
+				mui('.mui-bar-nav').on('tap','.toggleSearch',function(){
+					if(this.getAttribute('data-action') == 'show'){
+						document.querySelector('.nav-search').classList.remove('mui-hidden');
+						document.querySelector('.nav-search input').focus();
+					}else{
+						document.querySelector('.nav-search').classList.add('mui-hidden');
+						document.querySelector('.nav-search input').blur();
+					}
+				});
+				
+				
+				mui(".mui-progressbar").each(function () {
+					mui(this).progressbar({progress:this.getAttribute("data-progress")}).show();
+				});
+			});
+		</script>
+	</body>
+
+</html>

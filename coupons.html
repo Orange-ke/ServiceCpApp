@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			.mui-slider{padding-bottom: 50px;}
+			.coupons-li{margin: 10px;border: #D2D2D2 1px solid;height: 90px;background: #fff;border-left: none;}
+			.mui-ios .coupons-li{border-width: 0.5px;border-radius: 3px;overflow: hidden;}
+			.coupons-li .mui-col-xs-4{background: #43AAF7;height: 100%;color: #fff;text-align: center;padding-top: 13px;position: relative;}
+			.coupons-li .mui-col-xs-4:before{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				content: '';
+				height: 100%;
+				width: 4px;
+				background-image: -webkit-radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-image: -moz-radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-image: radial-gradient(circle, #F7F7F7 3px,transparent 3px, transparent);
+			    background-size: 8px 8px;
+			    background-position-x: -4px;
+			}
+			.coupons-li .mui-col-xs-4 font{font-size: 16px;font-weight: normal;margin-right: 5px;}
+			.coupons-li .mui-col-xs-4 p{color: #fff;}
+			.coupons-li .mui-col-xs-8{padding: 5px 10px;}
+			.coupons-li .mui-col-xs-8 p{border-bottom: #D2D2D2 1px dashed;margin-top: 15px;}
+			
+			#item2 .mui-col-xs-4,#item3 .mui-col-xs-4{background: #D2D2D2;}
+			#item2 .mui-col-xs-8{background: url(images/used.png) no-repeat right center;background-size: 70px 70px;}
+			.mui-content-padded{position: absolute;bottom: 0;left: 0;right: 0;margin-bottom: 0;z-index: 10;}
+			.mui-content-padded .mui-btn{padding: 8px 0 !important;font-size: 16px;margin-bottom: 5px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav border-bottom immersed immersed-height">
+			<h1 class="mui-title">服务券</h1>
+		</header>
+		<div class="mui-content slider-pullup immersed">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1">未使用 (3)</a>
+					<a class="mui-control-item" href="#item2">使用记录 (3)</a>
+					<a class="mui-control-item" href="#item3">已过期 (11)</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar" style="width: 33.3333333%;"></div>
+				
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top mui-active">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="coupons-li mui-row">
+									<div class="mui-col-xs-4"><h2><font>￥</font>200</h2><p>服务券</p></div>
+									<div class="mui-col-xs-8"><h6 class="mui-ellipsis">仅限购买XXXXXXXXXXXXXXXX时使用</h6><p>使用期限：<br/>2017.11.20-2017.11.30</p></div>
+								</div>
+								<div class="coupons-li mui-row">
+									<div class="mui-col-xs-4"><h2><font>￥</font>200</h2><p>服务券</p></div>
+									<div class="mui-col-xs-8"><h6 class="mui-ellipsis">仅限购买XXXXXXXXXXXXXXXX时使用</h6><p>使用期限：<br/>2017.11.20-2017.11.30</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>
+							</div>
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="mui-loading"><div class="mui-spinner"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-content-padded">
+				<button class="mui-btn mui-btn-block" data-openwindow='{"url":"pages/coupons/couponsReceive.html","id":"couponsReceive"}'>查看可领券服务</button>
+			</div>
+		</div>
+		
+		<script src="js/mui.js"></script>
+		<script src="js/util.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function(){
+				mui('.mui-scroll-wrapper').scroll();
+			});
+		</script>
+	</body>
+
+</html>

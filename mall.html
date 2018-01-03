@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-fullscreen{padding-top: inherit;}
+			.mui-fullscreen .mui-col-xs-3{height: 100%;overflow-y: auto;}
+			.mui-fullscreen .mui-col-xs-3 .mui-control-item{font-size: 14px;border: none !important;width: 100%;outline: none;}
+			.mui-fullscreen .mui-col-xs-3 .mui-control-item:hover{background: none;}
+			.mui-fullscreen .mui-col-xs-3 .mui-control-item.mui-active{position: relative;color: #43AAF7;background: #fff;position: relative;z-index: 1000;}
+			.mui-fullscreen .mui-col-xs-9{height: 100%;overflow-y: auto;background: #fff;}
+			.mui-fullscreen .mui-col-xs-9 .mui-table-view{font-size: 14px;margin-top:1px;/*很见鬼，不加这个margin时滚动回弹会出现黑色背景*/}
+			.mui-fullscreen .mui-col-xs-9 .mui-table-view:before,.mui-fullscreen .mui-col-xs-9 .mui-table-view:after{height: 0;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav border-bottom immersed immersed-height">
+			<div class="mui-input-row mui-search">
+			    <input type="search" class="mui-input-clear" placeholder="投资融资类服务券">
+			</div>
+		</header>
+		<div class="mui-content immersed">
+		    <div class="mui-row mui-fullscreen">
+				<!-- 左侧一级菜单 -->
+				<div class="mui-col-xs-3 border-right">
+					<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+						<a class="mui-control-item border-bottom mui-active" href="#content1">财税服务</a>
+						<a class="mui-control-item border-bottom" href="#content2">信用评级</a>
+						<a class="mui-control-item border-bottom" href="#content3">法律服务</a>
+						<a class="mui-control-item border-bottom" href="#content4">电子商务</a>
+					</div>
+				</div>
+				<!-- 右侧二级菜单，菜单id需要跟一级菜单的href对应，才能实现联动 -->
+				<div id="segmentedControlContents" class="mui-col-xs-9">
+					<ul id="content1" class="mui-control-content mui-active mui-table-view">
+						<li class="mui-table-view-cell"><a class="mui-navigate-right" data-openWindow='{"url":"pages/mall/serviceList.html","id":"serviceList"}'>财税一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right" data-openWindow='{"url":"pages/mall/serviceList.html","id":"serviceList"}'>财税一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right" data-openWindow='{"url":"pages/mall/serviceList.html","id":"serviceList"}'>财税一类</a></li>
+					</ul>
+					<ul id="content2" class="mui-control-content mui-table-view">
+						<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>
+					</ul>
+					<ul id="content3" class="mui-control-content mui-table-view">
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">法律服务一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">法律服务一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">法律服务一类</a></li>
+					</ul>
+					<ul id="content4" class="mui-control-content mui-table-view">
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">电子商务一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">电子商务一类</a></li>
+						<li class="mui-table-view-cell"><a class="mui-navigate-right">电子商务一类</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/mui.js"></script>
+		<script src="js/util.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function() {
+				
+			});
+		</script>
+	</body>
+
+</html>

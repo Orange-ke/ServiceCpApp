@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<style>
+			.approve-box{margin: 10px;background: #fff;padding-bottom: 15px;}
+			.approve-box h5{text-align: center;background: #028EFF;color: #fff;line-height: 30px;}
+			.approve-box h6{margin: 15px 10px 0;}
+			.approve-box h6 label{color: #999;}
+			.tips{margin: 10px;background: #fff;padding: 20px;font-size: 14px;color: #666;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="approve-box">
+				<h5>实名认证</h5>
+				<h6><label>认证状态：</label>已认证</h6>
+				<h6><label>到期时间：</label>2017-12-31</h6>
+				<h6><label>认证说明：</label>即将到期</h6>
+			</div>
+			<div class="approve-box">
+				<h5>小微企业认证</h5>
+				<h6><label>认证状态：</label>认证中</h6>
+				<h6><label>到期时间：</label>认证中</h6>
+				<h6><label>认证说明：</label>认证中</h6>
+			</div>
+			<div class="tips">
+				温馨提示：请及时登陆柳州市中小企业服务平台（http://www.baidu.com<a class="copylink" data-link="http://www.baidu.com">点击复制网址</a>）进行认证
+			</div>
+		</div>
+		
+		<script src="../../js/mui.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function(){
+				mui('.tips').on('tap','.copylink',function(){
+					var _link = this.getAttribute('data-link');
+					if(mui.os.ios){
+						var UIPasteboard  = plus.ios.importClass("UIPasteboard");
+						var generalPasteboard = UIPasteboard.generalPasteboard();
+						generalPasteboard.setValueforPasteboardType(_link, "public.utf8-plain-text");
+					}else{
+						var Context = plus.android.importClass("android.content.Context");
+					    var main = plus.android.runtimeMainActivity();
+					    var clip = main.getSystemService(Context.CLIPBOARD_SERVICE);
+					    plus.android.invoke(clip,"setText",_link);
+					}
+					mui.toast('复制成功');
+				});
+			});
+		</script>
+	</body>
+
+</html>

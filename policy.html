@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			.mui-slider-indicator .mui-control-item font{margin-right: 5px;}
+			.mui-slider-group .mui-media .mui-media-object {max-width: 80px;height: 60px;}
+			.mui-slider-group .mui-media .mui-media-body p {line-height: 130%;margin-top: 8px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav border-bottom immersed immersed-height">
+			<h1 class="mui-title">政策</h1>
+		</header>
+		<div class="mui-content slider-pullup immersed">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1"><font class="iconfont icon-zc"></font>政策</a>
+					<a class="mui-control-item" href="#item2"><font class="iconfont icon-tz"></font>通知</a>
+					<a class="mui-control-item" href="#item3"><font class="iconfont icon-gg"></font>公告</a>
+					<a class="mui-control-item" href="#item4"><font class="iconfont icon-xw"></font>新闻</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar" style="width: 25%;"></div>
+				
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top mui-active">
+						<div class="mui-scroll">
+							<div class="container">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<img class="mui-media-object mui-pull-left" src="images/zc.jpg">
+										<div class="mui-media-body">
+											<h6 class="mui-ellipsis">财税服务新政策</h6>
+											<p class="mui-ellipsis-2">财税服务新政策财税服务新政策财税服务新政策</p>
+										</div>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<img class="mui-media-object mui-pull-left" src="images/zc.jpg">
+										<div class="mui-media-body">
+											<h6 class="mui-ellipsis">财税服务新政策财税服务新政策财税服务新政策</h6>
+											<p class="mui-ellipsis-2">财税服务新政策财税服务新政策财税服务新政策财税服务新政策财税服务新政策财税服务新政策</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>
+							</div>
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>
+							</div>
+						</div>
+					</div>
+					<div id="item4" class="mui-slider-item mui-control-content mui-scroll-wrapper border-top">
+						<div class="mui-scroll">
+							<div class="container">
+								<div class="mui-loading"><div class="mui-spinner"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/mui.js"></script>
+		<script src="js/util.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function(){
+				mui('.mui-scroll-wrapper').scroll();
+			});
+		</script>
+	</body>
+
+</html>
