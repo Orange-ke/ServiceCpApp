@@ -755,6 +755,7 @@ p
 
 .mui-scroll
 {
+    background: #fff;
     position: absolute;
     z-index: 1;
     padding-bottom: 50px;

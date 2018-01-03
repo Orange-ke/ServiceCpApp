@@ -25,7 +25,7 @@ function openWindow(customize){
 		_option.styles = {
 			titleNView: { //详情页原生导航配置
 				backgroundColor: '#fff', //导航栏背景色
-				autoBackButton: true, //自动绘制返回箭头
+				autoBackButton: true //自动绘制返回箭头
 				//titleText: '', //导航栏标题
 				//titleColor: '#000000', //文字颜色
 				//type: 'transparent', //透明渐变样式
