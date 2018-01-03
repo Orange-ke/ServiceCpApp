@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beba8cd-df45-4455-a471-2ca6f73b8dcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mui.css" afterPath="$PROJECT_DIR$/css/mui.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/util.js" afterPath="$PROJECT_DIR$/js/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/policy.html" afterPath="$PROJECT_DIR$/policy.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,21 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="33" column="89" lean-forward="true" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
+            <state relative-caret-position="574">
+              <caret line="183" column="48" lean-forward="true" selection-start-line="183" selection-start-column="48" selection-end-line="183" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mui.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mui.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="758" column="23" lean-forward="true" selection-start-line="758" selection-start-column="23" selection-end-line="758" selection-end-column="23" />
+            <state relative-caret-position="385">
+              <caret line="760" column="16" lean-forward="true" selection-start-line="760" selection-start-column="16" selection-end-line="760" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -116,8 +113,8 @@
         <option value="$PROJECT_DIR$/mall.html" />
         <option value="$PROJECT_DIR$/js/util.js" />
         <option value="$PROJECT_DIR$/policy.html" />
-        <option value="$PROJECT_DIR$/css/mui.css" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/css/mui.css" />
       </list>
     </option>
   </component>
@@ -291,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514943900859</updated>
       <workItem from="1514943902451" duration="8579000" />
-      <workItem from="1514959999992" duration="9274000" />
+      <workItem from="1514959999992" duration="9735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17853000" />
+    <option name="totallyTimeSpent" value="18314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -412,18 +409,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mui.css">
+    <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="758" column="23" lean-forward="true" selection-start-line="758" selection-start-column="23" selection-end-line="758" selection-end-column="23" />
+        <state relative-caret-position="574">
+          <caret line="183" column="48" lean-forward="true" selection-start-line="183" selection-start-column="48" selection-end-line="183" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/css/mui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="33" column="89" lean-forward="true" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
+        <state relative-caret-position="385">
+          <caret line="760" column="16" lean-forward="true" selection-start-line="760" selection-start-column="16" selection-end-line="760" selection-end-column="16" />
           <folding />
         </state>
       </provider>

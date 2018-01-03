@@ -369,11 +369,11 @@ a:active
 
 .mui-bar-tab ~ .mui-content
 {
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
 }
 .mui-bar-tab ~ .mui-content.mui-scroll-wrapper .mui-scrollbar-vertical
 {
-    bottom: 50px;
+    /*bottom: 50px;*/
 }
 
 .mui-bar-footer-secondary-tab ~ .mui-content
@@ -758,7 +758,6 @@ p
     background: #fff;
     position: absolute;
     z-index: 1;
-    padding-bottom: 50px;
     width: 100%;
 
     -webkit-transform: translateZ(0);
