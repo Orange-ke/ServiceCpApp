@@ -2,7 +2,8 @@
 	"@platforms": [
 		"android",
 		"iPhone",
-		"iPad"
+		"iPad",
+		"wechat"
 	],
 	"id": "H50C8B25A",/*应用的标识，创建应用时自动生成，勿手动修改*/
 	"name": "serviceCoupons",/*应用名称，程序桌面图标名称*/
