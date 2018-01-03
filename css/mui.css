@@ -748,7 +748,6 @@ p
     top: 0;
     bottom: 0;
     left: 0;
-
     /*overflow: hidden;*/
 
     width: 100%;
@@ -758,7 +757,7 @@ p
 {
     position: absolute;
     z-index: 1;
-
+    padding-bottom: 50px;
     width: 100%;
 
     -webkit-transform: translateZ(0);
