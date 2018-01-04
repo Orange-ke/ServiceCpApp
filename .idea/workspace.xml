@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beba8cd-df45-4455-a471-2ca6f73b8dcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mui.css" afterPath="$PROJECT_DIR$/css/mui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,17 +17,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="182" column="48" lean-forward="true" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
+            <state relative-caret-position="672">
+              <caret line="82" column="122" lean-forward="true" selection-start-line="82" selection-start-column="122" selection-end-line="82" selection-end-column="122" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mui.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mui.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mui.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="574">
@@ -120,8 +120,8 @@
         <option value="$PROJECT_DIR$/mall.html" />
         <option value="$PROJECT_DIR$/js/util.js" />
         <option value="$PROJECT_DIR$/policy.html" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/css/mui.css" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -296,12 +296,12 @@
       <updated>1514943900859</updated>
       <workItem from="1514943902451" duration="8579000" />
       <workItem from="1514959999992" duration="10822000" />
-      <workItem from="1515027224122" duration="5165000" />
+      <workItem from="1515027224122" duration="5336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24566000" />
+    <option name="totallyTimeSpent" value="24737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -476,14 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="182" column="48" lean-forward="true" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/mui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
@@ -503,6 +495,14 @@
             <element signature="e#15150#16301#2" expanded="true" />
             <element signature="e#16446#17594#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="82" column="122" lean-forward="true" selection-start-line="82" selection-start-column="122" selection-end-line="82" selection-end-column="122" />
+          <folding />
         </state>
       </provider>
     </entry>
