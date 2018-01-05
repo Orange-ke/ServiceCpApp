@@ -1493,7 +1493,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-bar
 {
     position: fixed;
-    z-index: 10;
+    z-index: 200;
     right: 0;
     left: 0;
 
