@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8beba8cd-df45-4455-a471-2ca6f73b8dcf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2017厦门市小微企业服务补贴券系统操作指南.docx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home/serviceItem.html" afterPath="$PROJECT_DIR$/pages/home/serviceItem.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -62,21 +63,21 @@
       <file leaf-file-name="serviceItem.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/home/serviceItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="546">
+              <caret line="83" column="140" lean-forward="false" selection-start-line="83" selection-start-column="119" selection-end-line="83" selection-end-column="140" />
               <folding>
                 <element signature="n#style#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7513#7519#0" expanded="true" />
-                <element signature="e#7519#7525#0" expanded="true" />
-                <element signature="e#7526#7532#0" expanded="true" />
-                <element signature="e#7532#7538#0" expanded="true" />
+                <element signature="e#7501#7507#0" expanded="true" />
+                <element signature="e#7507#7513#0" expanded="true" />
+                <element signature="e#7514#7520#0" expanded="true" />
+                <element signature="e#7520#7526#0" expanded="true" />
+                <element signature="e#7966#7972#0" expanded="true" />
+                <element signature="e#7972#7978#0" expanded="true" />
                 <element signature="e#7978#7984#0" expanded="true" />
                 <element signature="e#7984#7990#0" expanded="true" />
                 <element signature="e#7990#7996#0" expanded="true" />
                 <element signature="e#7996#8002#0" expanded="true" />
-                <element signature="e#8002#8008#0" expanded="true" />
-                <element signature="e#8008#8014#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -405,12 +406,12 @@
       <workItem from="1514943902451" duration="8579000" />
       <workItem from="1514959999992" duration="10822000" />
       <workItem from="1515027224122" duration="28977000" />
-      <workItem from="1515373389630" duration="13320000" />
+      <workItem from="1515373389630" duration="13664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61698000" />
+    <option name="totallyTimeSpent" value="62042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -476,16 +477,16 @@
           <folding>
             <element signature="n#style#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7513#7519#0" expanded="true" />
-            <element signature="e#7519#7525#0" expanded="true" />
-            <element signature="e#7526#7532#0" expanded="true" />
-            <element signature="e#7532#7538#0" expanded="true" />
+            <element signature="e#7501#7507#0" expanded="true" />
+            <element signature="e#7507#7513#0" expanded="true" />
+            <element signature="e#7514#7520#0" expanded="true" />
+            <element signature="e#7520#7526#0" expanded="true" />
+            <element signature="e#7966#7972#0" expanded="true" />
+            <element signature="e#7972#7978#0" expanded="true" />
             <element signature="e#7978#7984#0" expanded="true" />
             <element signature="e#7984#7990#0" expanded="true" />
             <element signature="e#7990#7996#0" expanded="true" />
             <element signature="e#7996#8002#0" expanded="true" />
-            <element signature="e#8002#8008#0" expanded="true" />
-            <element signature="e#8008#8014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,21 +755,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/home/serviceItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        <state relative-caret-position="546">
+          <caret line="83" column="140" lean-forward="false" selection-start-line="83" selection-start-column="119" selection-end-line="83" selection-end-column="140" />
           <folding>
             <element signature="n#style#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7513#7519#0" expanded="true" />
-            <element signature="e#7519#7525#0" expanded="true" />
-            <element signature="e#7526#7532#0" expanded="true" />
-            <element signature="e#7532#7538#0" expanded="true" />
+            <element signature="e#7501#7507#0" expanded="true" />
+            <element signature="e#7507#7513#0" expanded="true" />
+            <element signature="e#7514#7520#0" expanded="true" />
+            <element signature="e#7520#7526#0" expanded="true" />
+            <element signature="e#7966#7972#0" expanded="true" />
+            <element signature="e#7972#7978#0" expanded="true" />
             <element signature="e#7978#7984#0" expanded="true" />
             <element signature="e#7984#7990#0" expanded="true" />
             <element signature="e#7990#7996#0" expanded="true" />
             <element signature="e#7996#8002#0" expanded="true" />
-            <element signature="e#8002#8008#0" expanded="true" />
-            <element signature="e#8008#8014#0" expanded="true" />
           </folding>
         </state>
       </provider>
