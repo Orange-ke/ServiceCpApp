@@ -28,358 +28,354 @@
 			#item3 .mui-media .mui-media-body{line-height: 130%;color: #666;font-size: 12px;text-indent: 2em;height: 60px;overflow: hidden;}
             .star:before { content: "\e408"; color: #FFC107; }
             .price { font-size: 110%; font-weight: bold; color: #D32F2F; }
-            .mui-control-content table,.mui-control-content2 table thead,.mui-control-content table tbody,.mui-control-content table tr { width: 100%; }
-            .mui-control-content table thead tr { font-size: .9em; }
-            .mui-control-content table tr td { padding: 5px; font-size: .8em; text-align: center;}
-            .mui-control-content table tbody tr { border-top: 1px solid #ddd; }
-            .mui-control-content table tbody tr .star { font-size: .8em; }
+            .serviceRecords table,.serviceRecords table thead,.serviceRecords table tbody,.serviceRecords table tr,.comment table, .comment table thead,.comment table tbody,.comment table tr{ width: 100%; }
+            .serviceRecords table thead tr,.comment table thead tr { font-size: 14px; }
+            .serviceRecords table tr td,.comment table tr td { padding: 5px; font-size: 14px; text-align: center;}
+            .serviceRecords table tbody tr,.comment table tbody tr { border-top: 1px solid #ddd; }
+            .serviceRecords table tbody tr .star,.comment table tbody tr .star { font-size: 14px; }
+            header.mui-bar-tab {top: 0; bottom: auto; font-size: 90%;}
+            header .mui-tab-item.mui-active .mui-tab-label:before {content: '·'; display: inline-block; font-size: 120%; font-weight: bolder; margin-right: 5px;}
+            #a2 {background: #FF7707; color: #fff;}
+            .mui-scroll-wrapper {padding: 50px 0;}
+            .mui-table-view .star {font-size: 18px;}
+            .contactInfo li,.mui-table-view li {font-size: 14px;}
+            .scrollSign h2 {font-weight: 400; font-size: 22px; text-align: center; color: #929292; margin: 20px 0; padding: 8px; border-bottom: 1px solid #ddd; transition: .5s; -webkit-transition: .5s;}
+            .scrollSign h2.active {color: #43AAF7;}
+            .mui-table-view:before , .mui-table-view:after {opacity: 0}
 		</style>
 	</head>
 
 	<body>
 		<div class="mui-content">
-			<img src="../../images/2.jpg" class="banner"/>
+            <nav class="mui-bar mui-bar-tab " id="nav">
+                <a class="mui-tab-item mui-active" id="a1">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">服务商</span>
+                </a>
+                <a class="mui-tab-item " id="a2">
+                    <span class="mui-tab-label">立即联络</span>
+                </a>
+            </nav>
 
-            <div id="info">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务名称：</span>
-                        <span class="infoContent">财税服务</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务编号：</span>
-                        <span class="infoContent">0002</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务类别：</span>
-                        <span class="infoContent">财税服务</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务价格：</span>
-                        <span class="infoContent price">￥ 3000.00</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务评分：</span>
-                        <span class="infoContent">
-                            <span class="mui-icon star"></span>
-                            <span class="mui-icon star"></span>
-                            <span class="mui-icon star"></span>
-                            <span class="mui-icon star"></span>
-                            <span class="mui-icon star"></span>
-                        </span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务方式：</span>
-                        <span class="infoContent">合同式服务</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务对象：</span>
-                        <span class="infoContent">微型企业,小型企业</span>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <span class="infoTitle">服务标准：</span>
-                        <span class="infoContent">微型企业3000元，小型企业5000元</span>
-                    </li>
-                    <li class="mui-table-view-cell" style="text-align: center; height: 80px;">
-                        <button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" data-openwindow='{"url":"https://www.baidu.com"}' style="font-size: 20px; right: 50%; transform: translateX(50%) translateY(-50%)">立即申请</button>
-                    </li>
-                </ul>
-            </div>
+            <header class="mui-bar mui-bar-tab">
+                <a class="headerItem mui-tab-item mui-active" id="h1">
+                    <span class="mui-tab-label">服务介绍</span>
+                </a>
+                <a class="headerItem mui-tab-item " id="h2">
+                    <span class="mui-tab-label">服务记录</span>
+                </a>
+                <a class="headerItem mui-tab-item " id="h3">
+                    <span class="mui-tab-label">联系方式</span>
+                </a>
+                <a class="headerItem mui-tab-item " id="h4">
+                    <span class="mui-tab-label">评价</span>
+                </a>
+            </header>
 
-			<div id="segmentedControl1" class="mui-segmented-control">
-				<a class="mui-control-item mui-active" href="#item1">服务介绍</a>
-				<a class="mui-control-item" href="#item2">服务记录</a>
-				<a class="mui-control-item" href="#item3">联系方式</a>
-			</div>
-			<div>
-				<div id="item1" class="mui-control-content introduction mui-active">
-                    广州灵川计算机软件有限公司始创于1996年，是中国领先的服装行业解决方案供应商，90%的员工拥有大学本科以上学历，技术研发人员占员工总数的三分之一，
-                    领导核心资历深厚，富有开拓创新精神，现在公司以广州为总部，在香港、北京、上海、沈阳、郑州、福建、成都、石家庄等地都有分支机构。
-				</div>
-                <div id="item2" class="mui-control-content">
-                    <table border="0">
-                        <thead>
-                        <tr>
-                            <th>小微企业</th>
-                            <th>服务名称</th>
-                            <th>日期</th>
-                            <th>状态</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>财税服务</td>
-                            <td>2017-11-23</td>
-                            <td>已处理</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>财税服务</td>
-                            <td>2017-11-23</td>
-                            <td>已处理</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>财税服务</td>
-                            <td>2017-11-23</td>
-                            <td>已处理</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>财税服务</td>
-                            <td>2017-11-23</td>
-                            <td>已处理</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <img src="../../images/2.jpg" class="banner"/>
+                    <div id="info">
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务价格：</span>
+                                <span class="infoContent price">￥ 3000.00</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务名称：</span>
+                                <span class="infoContent">财税服务</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务编号：</span>
+                                <span class="infoContent">0002</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务类别：</span>
+                                <span class="infoContent">财税服务</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务评分：</span>
+                                <span class="infoContent">
+                                    <span class="mui-icon star"></span>
+                                    <span class="mui-icon star"></span>
+                                    <span class="mui-icon star"></span>
+                                    <span class="mui-icon star"></span>
+                                    <span class="mui-icon star"></span>
+                                </span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务方式：</span>
+                                <span class="infoContent">合同式服务</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务对象：</span>
+                                <span class="infoContent">微型企业,小型企业</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <span class="infoTitle">服务标准：</span>
+                                <span class="infoContent">微型企业3000元，小型企业5000元</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="scroll1" class="scrollSign">
+                        <h2>详情</h2>
+                        <div id="item1" class="introduction">
+                            广州灵川计算机软件有限公司始创于1996年，是中国领先的服装行业解决方案供应商，90%的员工拥有大学本科以上学历，技术研发人员占员工总数的三分之一，
+                            领导核心资历深厚，富有开拓创新精神，现在公司以广州为总部，在香港、北京、上海、沈阳、郑州、福建、成都、石家庄等地都有分支机构。
+                        </div>
+                    </div>
+                    <div id="scroll2" class="scrollSign">
+                        <h2>服务记录</h2>
+                        <div id="item2" class="serviceRecords">
+                            <table border="0">
+                                <thead>
+                                <tr>
+                                    <th>小微企业</th>
+                                    <th>服务名称</th>
+                                    <th>日期</th>
+                                    <th>状态</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>柳州某某公司</td>
+                                    <td>财税服务</td>
+                                    <td>2017-11-23</td>
+                                    <td>已处理</td>
+                                </tr>
+                                <tr>
+                                    <td>柳州某某公司</td>
+                                    <td>财税服务</td>
+                                    <td>2017-11-23</td>
+                                    <td>已处理</td>
+                                </tr>
+                                <tr>
+                                    <td>柳州某某公司</td>
+                                    <td>财税服务</td>
+                                    <td>2017-11-23</td>
+                                    <td>已处理</td>
+                                </tr>
+                                <tr>
+                                    <td>柳州某某公司</td>
+                                    <td>财税服务</td>
+                                    <td>2017-11-23</td>
+                                    <td>已处理</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+                        </div>
+                    </div>
+                    <div  id="scroll3" class="scrollSign">
+                        <h2>联系方式</h2>
+                        <div id="item3" class="contactInfo">
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell" style="border-top: none;">
+                                    <span class="infoTitle">公司名称：</span>
+                                    <span class="infoContent">柳州市小微企业服务中心</span>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <span class="infoTitle">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span>
+                                    <span class="infoContent">孙先生</span>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <span class="infoTitle">联系电话：</span>
+                                    <span class="infoContent">15812345678</span>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <span class="infoTitle">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                                    <span class="infoContent">珠海市香洲区柠溪789号</span>
+                                </li>
+                            </ul>
+                            <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+                        </div>
+                    </div>
+                    <div id="scroll4" class="comment scrollSign">
+                        <h2>评价</h2>
+                        <div>
+                            <div id="segmentedControl2" class="mui-segmented-control">
+                                <a class="mui-control-item mui-active" href="#comment1">好评</a>
+                                <a class="mui-control-item" href="#comment2">中评</a>
+                                <a class="mui-control-item" href="#comment3">差评</a>
+                            </div>
+                            <div>
+                                <div id="comment1" class="mui-control-content mui-active">
+                                    <table border="0">
+                                        <thead>
+                                            <tr>
+                                                <th>评价企业</th>
+                                                <th>评价等级</th>
+                                                <th>日期</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+                                </div>
+                                <div id="comment2" class="mui-control-content">
+                                    <table border="0">
+                                        <thead>
+                                        <tr>
+                                            <th>评价企业</th>
+                                            <th>评价等级</th>
+                                            <th>日期</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+                                </div>
+                                <div id="comment3" class="mui-control-content">
+                                    <table border="0">
+                                        <thead>
+                                        <tr>
+                                            <th>评价企业</th>
+                                            <th>评价等级</th>
+                                            <th>日期</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>柳州某某公司</td>
+                                            <td>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                                <span class="mui-icon star"></span>
+                                            </td>
+                                            <td>2017-11-23</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="item3" class="mui-control-content">
-                    <ul class="mui-table-view">
-                        <li class="mui-table-view-cell">
-                            <span class="infoTitle">公司名称：</span>
-                            <span class="infoContent">柳州市小微企业服务中心</span>
-                        </li>
-                        <li class="mui-table-view-cell">
-                            <span class="infoTitle">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span>
-                            <span class="infoContent">孙先生</span>
-                        </li>
-                        <li class="mui-table-view-cell">
-                            <span class="infoTitle">联系电话：</span>
-                            <span class="infoContent">15812345678</span>
-                        </li>
-                        <li class="mui-table-view-cell">
-                            <span class="infoTitle">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
-                            <span class="infoContent">珠海市香洲区柠溪789号</span>
-                        </li>
-                    </ul>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
-                </div>
-			</div>
-
-            <div id="segmentedControl2" class="mui-segmented-control">
-                <a class="mui-control-item mui-active" href="#comment1">全部评价</a>
-                <a class="mui-control-item" href="#comment2">好评</a>
-                <a class="mui-control-item" href="#comment3">中评</a>
-                <a class="mui-control-item" href="#comment4">差评</a>
-            </div>
-            <div>
-                <div id="comment1" class="mui-control-content mui-active">
-                    <table border="0">
-                        <thead>
-                            <tr>
-                                <th>评价企业</th>
-                                <th>评价等级</th>
-                                <th>日期</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
-                </div>
-                <div id="comment2" class="mui-control-content">
-                    <table border="0">
-                        <thead>
-                        <tr>
-                            <th>评价企业</th>
-                            <th>评价等级</th>
-                            <th>日期</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
-                </div>
-                <div id="comment3" class="mui-control-content">
-                    <table border="0">
-                        <thead>
-                        <tr>
-                            <th>评价企业</th>
-                            <th>评价等级</th>
-                            <th>日期</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
-                </div>
-                <div id="comment4" class="mui-control-content">
-                    <table border="0">
-                        <thead>
-                        <tr>
-                            <th>评价企业</th>
-                            <th>评价等级</th>
-                            <th>日期</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        <tr>
-                            <td>柳州某某公司</td>
-                            <td>
-                                <span class="mui-icon star"></span>
-                            </td>
-                            <td>2017-11-23</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!--<div class="mui-nodata"><span class="iconfont icon-nodata"></span>什么都没有！</div>-->
-                </div>
-            </div>
-		</div>
-		
+		    </div>
+        </div>
 		<script src="../../js/mui.js"></script>
 		<script src="../../js/util.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
+            mui('.mui-scroll-wrapper').scroll();
             document.querySelectorAll(".confirmItem").forEach(function(e,i) {
                 var sign = e.getAttribute('id');
                 e.addEventListener('tap',function() {
@@ -393,6 +389,56 @@
                     }
                 })
             });
+
+            //构建页面scrollSpy对象
+            var scrollSpy = {
+                initData: function getInitData() {
+                    var InitArr = [],InitArr_ = [];
+                    var middle = (Number(document.querySelector(".mui-scroll-wrapper").clientHeight) - 100) / 2;
+                    document.querySelectorAll(".scrollSign").forEach(function(e) {
+                        InitArr.push({start: Number(e.offsetTop) * (-1), end: Number(e.offsetTop + e.scrollHeight) * (-1)});
+                        InitArr_.push({start: Number(e.offsetTop) * (-1) + middle, end: Number(e.offsetTop + e.scrollHeight) * (-1) + middle});
+                    });
+                    return [InitArr,InitArr_];
+                },
+                headerItemFocus: function(referring,InitArr) {
+                    if (referring >= InitArr[0].end) {
+                        return [document.querySelectorAll(".headerItem")[0],document.querySelectorAll(".scrollSign h2")[0]];
+                    } else if (referring < InitArr[0].end && referring >= InitArr[1].end) {
+                        return [document.querySelectorAll(".headerItem")[1],document.querySelectorAll(".scrollSign h2")[1]];
+                    } else if (referring < InitArr[1].end && referring >= InitArr[2].end) {
+                        return [document.querySelectorAll(".headerItem")[2],document.querySelectorAll(".scrollSign h2")[2]];
+                    } else if (referring < InitArr[2].end) {
+                        return [document.querySelectorAll(".headerItem")[3],document.querySelectorAll(".scrollSign h2")[3]];
+                    }
+                },
+                removeClass: function(className) {
+                    var Arr = document.querySelectorAll(".scrollSign h2");
+                    Arr.forEach(function(e) {
+                        e.classList.remove(className);
+                    })
+                }
+            };
+            document.querySelectorAll(".headerItem").forEach(function(e,i) {
+                e.addEventListener("tap",function() {
+                    if (scrollSpy.initData()[0][i].start > mui('.mui-scroll-wrapper').scroll().maxScrollY) {
+                        mui('.mui-scroll-wrapper').scroll().scrollTo(0,scrollSpy.initData()[0][i].start,500);
+                    } else {
+                        mui('.mui-scroll-wrapper').scroll().scrollTo(0,mui('.mui-scroll-wrapper').scroll().maxScrollY,500);
+                    }
+                    scrollSpy.removeClass("active");
+                    document.querySelectorAll(".scrollSign h2")[i].classList.add("active");
+                })
+            });
+            document.querySelector('.mui-scroll-wrapper').addEventListener("scroll",function() {
+                var wrapperY = mui('.mui-scroll-wrapper').scroll().y;
+                document.querySelectorAll(".headerItem").forEach(function(e) {
+                    e.classList.remove("mui-active");
+                });
+                scrollSpy.removeClass("active");
+                scrollSpy.headerItemFocus(wrapperY,scrollSpy.initData()[1])[0].classList.add("mui-active");
+                scrollSpy.headerItemFocus(wrapperY,scrollSpy.initData()[1])[1].classList.add("active");
+            })
 		</script>
 	</body>
 

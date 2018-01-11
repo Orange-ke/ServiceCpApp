@@ -51,3 +51,13 @@ function getUrlData(name) {
 
 //上拉刷新，下拉加载
 
+//判断UserAgent
+function textUserAgent() {
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+        return 'ios';
+    } else if (/(Android)/i.test(navigator.userAgent)) {
+        return 'adr';
+    } else {
+        return 'pc';
+    }
+}
