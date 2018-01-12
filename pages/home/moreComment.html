@@ -14,11 +14,15 @@
         .comment table tr td{ padding: 5px; font-size: 15px; text-align: center;}
         .comment table tbody tr{ border-top: 1px solid #ddd; }
         .comment table tbody tr .star{ font-size: 14px; }
-        thead th {padding: 8px; background: beige;}
+        thead th {padding: 8px; background: #BDBDBD;}
     </style>
 </head>
 
 <body>
+<header class="mui-bar mui-bar-nav border-bottom">
+    <a class="mui-action-back mui-icon mui-icon-arrowleft mui-pull-left"></a>
+    <h1 class="mui-title">更多评价</h1>
+</header>
 <div class="mui-content" id="refreshContainer">
     <div class="comment">
         <table border="0">
@@ -109,7 +113,7 @@
     (function() {
         var type = getUrlData("type");
         if (type) {
-            document.title = '更多评论' + '(' + titileConvert(type) + ')';
+            document.querySelector(".mui-title").innerText = '更多评价' + '(' + titileConvert(type) + ')';
         }
     })()
 </script>
