@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../../css/mui.css" rel="stylesheet" />
+    <style>
+        .sevList{overflow: hidden;}
+        .sevList table,.sevList table thead,.sevList table tbody,.sevList table tr { width: 100%; }
+        .sevList table thead tr { font-size: 14px; }
+        .sevList table tr td{ padding: 5px; font-size: 15px; text-align: center;}
+        .sevList table tbody tr{ border-top: 1px solid #ddd; }
+        thead th {padding: 8px; background: beige;}
+    </style>
+</head>
+
+<body>
+<div class="mui-content" id="refreshContainer">
+    <div class="sevList">
+        <table border="0">
+            <thead>
+            <tr>
+                <th>小微企业</th>
+                <th>服务名称</th>
+                <th>日期</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>财税服务</td>
+                <td>2017-11-23</td>
+                <td>已处理</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>财税服务</td>
+                <td>2017-11-23</td>
+                <td>已处理</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>财税服务</td>
+                <td>2017-11-23</td>
+                <td>已处理</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>财税服务</td>
+                <td>2017-11-23</td>
+                <td>已处理</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../../js/mui.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/main.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        pullRefresh: {
+            container: '#refreshContainer',
+            down: {
+                style: 'circle',
+                color: '#43AAF7',
+                //auto: true,
+                callback: function() {
+                    mui('#refreshContainer').pullRefresh().endPulldown();
+                }
+            },
+            up:{
+                contentrefresh : "正在加载...",
+                contentnomore:'没有更多数据了',
+                callback :function(){
+                    mui.later(function(){
+                        mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+                    },1000);
+                }
+            }
+        }
+    });
+    mui(".mui-scroll-wrapper").scroll();
+</script>
+</body>
+
+</html>

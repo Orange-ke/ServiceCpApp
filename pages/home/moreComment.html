@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../../css/mui.css" rel="stylesheet" />
+    <style>
+        .comment{overflow: hidden;}
+        .star:before { content: "\e408"; color: #FFC107; }
+        .comment table,.comment table thead,.comment table tbody,.comment table tr { width: 100%; }
+        .comment table thead tr { font-size: 14px; }
+        .comment table tr td{ padding: 5px; font-size: 15px; text-align: center;}
+        .comment table tbody tr{ border-top: 1px solid #ddd; }
+        .comment table tbody tr .star{ font-size: 14px; }
+        thead th {padding: 8px; background: beige;}
+    </style>
+</head>
+
+<body>
+<div class="mui-content" id="refreshContainer">
+    <div class="comment">
+        <table border="0">
+            <thead>
+            <tr>
+                <th>评价企业</th>
+                <th>评价等级</th>
+                <th>日期</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                </td>
+                <td>2017-11-23</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                </td>
+                <td>2017-11-23</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                </td>
+                <td>2017-11-23</td>
+            </tr>
+            <tr>
+                <td>柳州某某公司</td>
+                <td>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                    <span class="mui-icon star"></span>
+                </td>
+                <td>2017-11-23</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../../js/mui.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/main.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        pullRefresh: {
+            container: '#refreshContainer',
+            down: {
+                style: 'circle',
+                color: '#43AAF7',
+                //auto: true,
+                callback: function() {
+                    mui('#refreshContainer').pullRefresh().endPulldown();
+                }
+            },
+            up:{
+                contentrefresh : "正在加载...",
+                contentnomore:'没有更多数据了',
+                callback :function(){
+                    mui.later(function(){
+                        mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+                    },1000);
+                }
+            }
+        }
+    });
+    mui(".mui-scroll-wrapper").scroll();
+    (function() {
+        var type = getUrlData("type");
+        if (type) {
+            document.title = '更多评论' + '(' + titileConvert(type) + ')';
+        }
+    })()
+</script>
+</body>
+
+</html>

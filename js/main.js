@@ -61,3 +61,18 @@ function textUserAgent() {
         return 'pc';
     }
 }
+
+//title转化
+function titileConvert(type) {
+    switch (type) {
+        case 'up':
+            return '好评';
+            break;
+        case 'middle':
+            return '中评';
+            break;
+        case 'down':
+            return '差评';
+            break;
+    }
+}
