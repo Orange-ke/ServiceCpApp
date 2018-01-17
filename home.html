@@ -72,109 +72,135 @@
 				<div class="mui-indicator"></div>
 			  </div>
 			</div>
-			<ul class="mui-table-view mui-grid-view mui-grid-9">
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>10001</span>家<br/>申请企业</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>3006</span>次<br/>服务签约</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>521.89</span>万<br/>累计领券</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>921.45</span>万<br/>合同金额</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>10001</span>家<br/>服务机构</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>3006</span>个<br/>服务项目</a></li>
-	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>521.89</span>个<br/>专家团队</a></li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span>521.89</span>万<br/>服务券金额</a></li>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 HomeStatisticsInfo">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="EnterprisesNumber"></span>家<br/>申请企业</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="ServiceSignNumber"></span>次<br/>服务签约</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="SumPaymentAmount" data-format="money"></span>万<br/>累计领券</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="SumContractAmount" data-format="money"></span>万<br/>合同金额</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="ServiceAgencyNumber"></span>家<br/>服务机构</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="ServiceItemsNumber"></span>个<br/>服务项目</a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="ExpertTeamNumber"></span>个<br/>专家团队</a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><span data-name="SumVoucherAmount" data-format="money"></span>万<br/>服务券金额</a></li>
 	        </ul>
 	        <div class="recommend border-bottom">
 	        	<h5 class="font-normal block-title">优秀项目推荐</h5>
-	        	<div class="mui-row">
-	        		<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州安博管理平台项目","type":"transparent"}}}'>
-                    <div class="img"><img src="images/2.jpg"/></div>
-                    <h6 class="mui-ellipsis">柳州安博管理平台项目</h6>
-                    <p class="mui-ellipsis-2">柳州安博管理平台项目主要是为了开发一个管理平台用于内部员工</p>
-                </div>
-                    <div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州万达广场工程","type":"transparent"}}}'>
-                        <div class="img"><img src="images/1.jpg"/></div>
-                        <h6 class="mui-ellipsis">柳州万达广场工程</h6>
-                        <p class="mui-ellipsis-2">柳州万达广场位于柳州市XXX区的黄金地段，三街交汇人口密集。</p>
-                    </div>
-                    <div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州安博管理平台项目","type":"transparent"}}}'>
-                        <div class="img"><img src="images/2.jpg"/></div>
-                        <h6 class="mui-ellipsis">柳州安博管理平台项目</h6>
-                        <p class="mui-ellipsis-2">柳州安博管理平台项目主要是为了开发一个管理平台用于内部员工</p>
-                    </div>
-                    <div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州万达广场工程","type":"transparent"}}}'>
-                        <div class="img"><img src="images/1.jpg"/></div>
-                        <h6 class="mui-ellipsis">柳州万达广场工程</h6>
-                        <p class="mui-ellipsis-2">柳州万达广场位于柳州市XXX区的黄金地段，三街交汇人口密集。</p>
-                    </div>
+	        	<div class="mui-row RecommendServiceItemsList">
+	        		<!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州安博管理平台项目","type":"transparent"}}}'>-->
+                        <!--<div class="img"><img src="images/2.jpg"/></div>-->
+                        <!--<h6 class="mui-ellipsis">柳州安博管理平台项目</h6>-->
+                        <!--<p class="mui-ellipsis-2">柳州安博管理平台项目主要是为了开发一个管理平台用于内部员工</p>-->
+                    <!--</div>-->
+                    <!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州万达广场工程","type":"transparent"}}}'>-->
+                        <!--<div class="img"><img src="images/1.jpg"/></div>-->
+                        <!--<h6 class="mui-ellipsis">柳州万达广场工程</h6>-->
+                        <!--<p class="mui-ellipsis-2">柳州万达广场位于柳州市XXX区的黄金地段，三街交汇人口密集。</p>-->
+                    <!--</div>-->
+                    <!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州安博管理平台项目","type":"transparent"}}}'>-->
+                        <!--<div class="img"><img src="images/2.jpg"/></div>-->
+                        <!--<h6 class="mui-ellipsis">柳州安博管理平台项目</h6>-->
+                        <!--<p class="mui-ellipsis-2">柳州安博管理平台项目主要是为了开发一个管理平台用于内部员工</p>-->
+                    <!--</div>-->
+                    <!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州万达广场工程","type":"transparent"}}}'>-->
+                        <!--<div class="img"><img src="images/1.jpg"/></div>-->
+                        <!--<h6 class="mui-ellipsis">柳州万达广场工程</h6>-->
+                        <!--<p class="mui-ellipsis-2">柳州万达广场位于柳州市XXX区的黄金地段，三街交汇人口密集。</p>-->
+                    <!--</div>-->
 	        	</div>
                 <div class="mui-text-center"><a data-openwindow='{"url":"pages/mall/serviceList.html","id":"serviceList","styles":{"titleNView":{"titleText":"优秀服务项目"}}}'>查看更多优秀服务项目</a></div>
 	        </div>
 	        <div class="mechanism border-bottom">
 	        	<h5 class="font-normal block-title">优秀服务机构</h5>
-	        	<div class="mui-row">
-	        		<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg1.jpg"/></div></div>
-	        		<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg2.jpg"/></div></div>
-	        		<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg3.jpg"/></div></div>
-                    <div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg1.jpg"/></div></div>
-                    <div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg2.jpg"/></div></div>
-                    <div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg3.jpg"/></div></div>
+	        	<div class="mui-row RecommendServiceAgencyList">
+	        		<!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg1.jpg"/></div></div>-->
+	        		<!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg2.jpg"/></div></div>-->
+	        		<!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg3.jpg"/></div></div>-->
+                    <!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg1.jpg"/></div></div>-->
+                    <!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg2.jpg"/></div></div>-->
+                    <!--<div class="mui-col-xs-4"><div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'><img src="images/jg3.jpg"/></div></div>-->
 	        	</div>
                 <div class="mui-text-center"><a data-openwindow='{"url":"pages/home/orgList.html","id":"expertList","styles":{"titleNView":{"titleText":"专家团队"}}}'>查看更多优秀服务机构</a></div>
 	        </div>
 	        <div class="expert">
 	        	<h5 class="font-normal block-title">专家团队</h5>
-	        	<div class="mui-row">
-	        		<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
-	        			<div class="expert-top">
-	        				<div class="img"><img src="images/zj1.jpg" /></div>
-	        				<div>
-	        					<h6 class="mui-ellipsis">王明洋</h6>
-	        					<p class="font-blue mui-ellipsis">投资管理</p>
-	        				</div>
-	        			</div>
-	        			<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>
-	        			<p class="mui-ellipsis-2">从事投资行业8年，曾多次获得多项XXX奖项</p>
-	        		</div>
-	        		<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
-	        			<div class="expert-top">
-	        				<div class="img"><img src="images/zj2.jpg" /></div>
-	        				<div>
-	        					<h6 class="mui-ellipsis">柳静媛</h6>
-	        					<p class="font-blue mui-ellipsis">投资管理</p>
-	        				</div>
-	        			</div>
-	        			<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>
-	        			<p class="mui-ellipsis-2">从事投资行业10年，曾多次获得多项XXX奖项</p>
-	        		</div>
-	        		<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
-	        			<div class="expert-top">
-	        				<div class="img"><img src="images/zj1.jpg" /></div>
-	        				<div>
-	        					<h6 class="mui-ellipsis">王明洋</h6>
-	        					<p class="font-blue mui-ellipsis">投资管理</p>
-	        				</div>
-	        			</div>
-	        			<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>
-	        			<p class="mui-ellipsis-2">从事投资行业8年，曾多次获得多项XXX奖项</p>
-	        		</div>
-	        		<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
-	        			<div class="expert-top">
-	        				<div class="img"><img src="images/zj2.jpg" /></div>
-	        				<div>
-	        					<h6 class="mui-ellipsis">柳静媛</h6>
-	        					<p class="font-blue mui-ellipsis">投资管理</p>
-	        				</div>
-	        			</div>
-	        			<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>
-	        			<p class="mui-ellipsis-2">从事投资行业10年，曾多次获得多项XXX奖项</p>
-	        		</div>
+	        	<div class="mui-row RecommendExpertTeamList">
+	        		<!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>-->
+	        			<!--<div class="expert-top">-->
+	        				<!--<div class="img"><img src="images/zj1.jpg" /></div>-->
+	        				<!--<div>-->
+	        					<!--<h6 class="mui-ellipsis">王明洋</h6>-->
+	        					<!--<p class="font-blue mui-ellipsis">投资管理</p>-->
+	        				<!--</div>-->
+	        			<!--</div>-->
+	        			<!--<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>-->
+	        			<!--<p class="mui-ellipsis-2">从事投资行业8年，曾多次获得多项XXX奖项</p>-->
+	        		<!--</div>-->
+	        		<!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>-->
+	        			<!--<div class="expert-top">-->
+	        				<!--<div class="img"><img src="images/zj2.jpg" /></div>-->
+	        				<!--<div>-->
+	        					<!--<h6 class="mui-ellipsis">柳静媛</h6>-->
+	        					<!--<p class="font-blue mui-ellipsis">投资管理</p>-->
+	        				<!--</div>-->
+	        			<!--</div>-->
+	        			<!--<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>-->
+	        			<!--<p class="mui-ellipsis-2">从事投资行业10年，曾多次获得多项XXX奖项</p>-->
+	        		<!--</div>-->
+	        		<!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>-->
+	        			<!--<div class="expert-top">-->
+	        				<!--<div class="img"><img src="images/zj1.jpg" /></div>-->
+	        				<!--<div>-->
+	        					<!--<h6 class="mui-ellipsis">王明洋</h6>-->
+	        					<!--<p class="font-blue mui-ellipsis">投资管理</p>-->
+	        				<!--</div>-->
+	        			<!--</div>-->
+	        			<!--<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>-->
+	        			<!--<p class="mui-ellipsis-2">从事投资行业8年，曾多次获得多项XXX奖项</p>-->
+	        		<!--</div>-->
+	        		<!--<div class="mui-col-xs-6" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>-->
+	        			<!--<div class="expert-top">-->
+	        				<!--<div class="img"><img src="images/zj2.jpg" /></div>-->
+	        				<!--<div>-->
+	        					<!--<h6 class="mui-ellipsis">柳静媛</h6>-->
+	        					<!--<p class="font-blue mui-ellipsis">投资管理</p>-->
+	        				<!--</div>-->
+	        			<!--</div>-->
+	        			<!--<h6 class="mui-ellipsis">柳州中心投资有限公司</h6>-->
+	        			<!--<p class="mui-ellipsis-2">从事投资行业10年，曾多次获得多项XXX奖项</p>-->
+	        		<!--</div>-->
 	        	</div>
 	        	<div class="mui-text-center"><a data-openwindow='{"url":"pages/home/expertList.html","id":"expertList","styles":{"titleNView":{"titleText":"专家团队"}}}'>查看更多团队</a></div>
 	        </div>
 	        </div>
 		</div>
 
+        <div hidden class="mui-col-xs-6 modal_RecommendServiceItemsList" data-openwindow='{"url":"pages/home/serviceItem.html","id":"serviceItem","styles":{"bounce": "vertical","titleNView":{"titleText":"柳州安博管理平台项目","type":"transparent"}}}'>
+            <div class="img"><img data-name="ShowImg" data-format="image" src="images/2.jpg"/></div>
+            <h6 data-name="Name" class="mui-ellipsis"></h6>
+            <p data-name="Description" class="mui-ellipsis-2"></p>
+        </div>
+
+        <div hidden class="mui-col-xs-4 modal_RecommendServiceAgencyList">
+            <div class="img" data-openwindow='{"url":"pages/home/orgItem.html","id":"orgItem","styles":{"titleNView":{"titleText":"优秀服务商"}}}'>
+                <img data-name="Banner" data-format="image"  src="images/jg1.jpg"/>
+            </div>
+        </div>
+
+        <div hidden class="mui-col-xs-6 modal_RecommendExpertTeamList" data-openwindow='{"url":"pages/home/expertDetail.html","id":"expertDetail","styles":{"bounce": "vertical","titleNView":{"titleText":"专家简介"}}}'>
+            <div class="expert-top">
+                <div class="img"><img data-name="Photo" data-format="image" src="images/zj1.jpg" /></div>
+                <div>
+                    <h6 data-name="Name" class="mui-ellipsis"></h6>
+                    <p data-name="Type" class="font-blue mui-ellipsis"></p>
+                </div>
+            </div>
+            <h6 data-name="StoreName" class="mui-ellipsis"></h6>
+            <p data-name="Introduce" class="mui-ellipsis-2"></p>
+        </div>
+
 		<script src="js/mui.js"></script>
 		<script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/token.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
             mui('.mui-slider').slider({
@@ -186,6 +212,34 @@
 //				mui('.mui-scroll-wrapper').scroll();
 //				mui('.mui-slider').slider({interval:3000});
 //			});
+
+			(function pageInit() {
+                // 1.创建
+                var ajax = new XMLHttpRequest();
+                var token = Token.get('CouponMall@JY');
+                var AllData,keys=[];
+                // 2设置
+                ajax.open('get', 'http://192.168.5.119:9000/api/homepage/' + token);
+
+                // 3.发送
+                ajax.send();
+
+                // 4.状态事件
+                ajax.onreadystatechange = function() {
+                    if (ajax.readyState == 4 && ajax.status == 200) {
+                        AllData = JSON.parse(ajax.response).Data;
+                        console.log(AllData);
+                        for (var arrayItem in AllData) {
+                            if (Array.isArray(AllData[arrayItem])) {
+                                appendData(AllData[arrayItem],true,arrayItem);
+                            } else {
+                                appendData(AllData[arrayItem],false,arrayItem);
+                            }
+                        }
+
+                    }
+                }
+			})();
 			
 		</script>
 	</body>
